@@ -12,3 +12,11 @@ def multiply_even_numbers(nums):
         >>> multiply_even_numbers([1, 3, 5])
         1
     """
+    check = []
+    for num in nums:
+        if num - (round((num/2),0)*2) == 0:
+            check.append(num)
+    intcheck = 1
+    for num in check:
+        intcheck = intcheck*num
+    return intcheck

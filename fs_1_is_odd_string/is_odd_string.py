@@ -29,3 +29,7 @@ def is_odd_string(word):
     """
 
     # Hint: you may find the ord() function useful here
+    check = 0
+    for i in word:
+        check = check+ord(i)
+    return not check%2==0

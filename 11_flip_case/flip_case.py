@@ -11,3 +11,5 @@ def flip_case(phrase, to_swap):
         'AaaaHHH'
 
     """
+    check = phrase.replace(to_swap,to_swap.upper(),phrase.count(to_swap))
+    return check

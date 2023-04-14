@@ -18,3 +18,7 @@ def sum_up_diagonals(matrix):
         >>> sum_up_diagonals(m2)
         30
     """
+    check = 0
+    for i in matrix:
+        check = check+i[0]+i[-1]
+    return check

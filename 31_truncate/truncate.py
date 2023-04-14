@@ -24,3 +24,13 @@ def truncate(phrase, n):
         >>> truncate("Woah", 3)
         '...'
     """
+    newPhrase = ""
+    if len(phrase)<n:
+        return phrase
+    elif n <3:
+        return "n must be greater than 3"
+    else:
+        for i in range(0,n-3):
+            newPhrase = f"{newPhrase}{phrase[i]}"
+        newPhrase = f"{newPhrase}..."
+        return newPhrase

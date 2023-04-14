@@ -7,3 +7,9 @@ def multiple_letter_count(phrase):
         >>> multiple_letter_count('Yay')
         {'Y': 1, 'a': 1, 'y': 1}
     """
+    check = {}
+    for let in phrase:
+        Dicto = {let: phrase.count(let)}
+        check.update(Dicto)
+    return check
+
